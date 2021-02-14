@@ -1,0 +1,58 @@
+{
+  "cart": [
+    {
+      "menuId": 1,
+      "id": 1
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "Peperoni",
+      "price": 350,
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCyEFr6ubZ-wSv2Dzj-lmtRngIQLIj5wh4WQ&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "name": "Buffalo Chicken",
+      "price": 380,
+      "src": "https://previews.123rf.com/images/mix3r/mix3r1411/mix3r141100271/33756050-vector-illustration-of-italian-pizza.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Low Gluten Cheese",
+      "price": 450,
+      "src": "https://static4.depositphotos.com/1009676/322/v/600/depositphotos_3224710-stock-illustration-pizza.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Sausage",
+      "price": 300,
+      "src": "https://static4.depositphotos.com/1009676/322/v/600/depositphotos_3224710-stock-illustration-pizza.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Cheese",
+      "price": 450,
+      "src": "https://static4.depositphotos.com/1009676/322/v/600/depositphotos_3224710-stock-illustration-pizza.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Margarita",
+      "price": 500,
+      "src": "https://i.pinimg.com/originals/9a/a6/94/9aa694de5f9fdb225ed575daef3934ba.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Double Peperoni",
+      "price": 600,
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaTQesDI18cgh2QduPVsbUn36cPPgEK5RYww&usqp=CAU"
+    },
+    {
+      "id": 8,
+      "name": "Italian",
+      "price": 450,
+      "src": "https://static4.depositphotos.com/1009676/322/v/600/depositphotos_3224710-stock-illustration-pizza.jpg"
+    }
+  ]
+}
