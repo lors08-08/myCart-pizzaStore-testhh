@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "120px",
     "& img": {
-      width: "150px",
+      width: "100%",
       height: "150px",
       paddingTop: "15px",
     },
@@ -35,6 +35,11 @@ const useStyles = makeStyles((theme) => ({
   delete: {
     color: "red",
     cursor: "pointer",
+    transition:"0.2s",
+    "&:hover": {
+      fontSize:"3em",
+      transition:"0.2s"
+    }
   },
   backdrop: {
     zIndex: theme.zIndex.drawer + 1,
@@ -65,6 +70,11 @@ function Body({ cartItems }) {
       alert("В корзине должна быть хотя-бы одна пицца!");
     }
   };
+  const handleDelete = (id) => {
+    if(window.confirm("Вы уверены?")) {
+      dispatch(deleteItem(id))
+    }
+  }
 
   if (!cartItems.length) {
     return <EmptyCart />;
@@ -101,7 +111,7 @@ function Body({ cartItems }) {
             </Grid>
             <Grid item container xs={2} justify={"center"}>
               <h1
-                onClick={() => dispatch(deleteItem(item.id))}
+                onClick={()=>handleDelete(item.id)}
                 className={classes.delete}
               >
                 X

@@ -49,7 +49,7 @@ function cart(state = initialState, action) {
     case "cart/deleteAll/succeed":
       return {
         ...state,
-        cartItems: state.cartItems.filter(() => false),
+        cartItems: [],
         deletingItem: false,
       };
     default:

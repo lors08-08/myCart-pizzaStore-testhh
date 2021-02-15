@@ -56,6 +56,14 @@ const useStyles = makeStyles(() => ({
 function Footer({ cartItems }) {
   const [open, setOpen] = React.useState(false);
 
+  const handleOrder = () => {
+    if (cartItems.length >= 1) {
+      setOpen(true);
+    } else {
+      alert("Выберите хотя-бы один товар:(");
+    }
+  };
+
   const classes = useStyles();
   return (
     <>
@@ -90,7 +98,7 @@ function Footer({ cartItems }) {
           <button className={classes.btnBack}>Вернуться в каталог</button>
         </Grid>
         <Grid item container justify={"flex-end"} alignItems={"center"} xs={4}>
-          <button className={classes.btnConfirm} onClick={() => setOpen(true)}>
+          <button className={classes.btnConfirm} onClick={handleOrder}>
             Оплатить сейчас
           </button>
         </Grid>

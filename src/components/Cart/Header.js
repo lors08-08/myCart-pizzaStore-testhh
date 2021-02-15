@@ -20,12 +20,24 @@ const useStyles = makeStyles(() => ({
   clearCart: {
     fontSize: "1em",
     fontFamily: "Oswald",
+    cursor:"pointer",
+    transition:"0.2s",
+    "&:hover": {
+      fontSize:"1.2em",
+      transition:"0.2s"
+    }
   },
 }));
 
 function Header() {
   const classes = useStyles();
   const dispatch = useDispatch();
+
+  const handleCleanOut = () => {
+    if(window.confirm("Вы уверены?")) {
+      dispatch(deleteAllItems())
+    }
+  }
 
   return (
     <Grid
@@ -43,7 +55,7 @@ function Header() {
         <DeleteForeverOutlinedIcon fontSize={"large"} />
         <div
           className={classes.clearCart}
-          onClick={() => dispatch(deleteAllItems())}
+          onClick={handleCleanOut}
         >
           Очистить корзину
         </div>

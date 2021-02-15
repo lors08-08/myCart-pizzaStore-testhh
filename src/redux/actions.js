@@ -38,7 +38,7 @@ export function addItem(menuId) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        menuId,
+        menuId
       }),
     })
       .then((response) => response.json())
@@ -74,7 +74,7 @@ export function deleteAllItems() {
       method: "DELETE",
     })
       .then((response) => response.json())
-      .then(() => {
+      .then((json) => {
         dispatch({
           type: "cart/deleteAll/succeed",
         });
